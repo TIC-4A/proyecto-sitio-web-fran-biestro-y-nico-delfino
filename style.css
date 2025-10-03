@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.control-panel, .team-info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.control-box, .info-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px;
+}
+
+#formation-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.editable-name {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: italic;
+    color: #666;
+}
+
+.editable-name.player-name {
+    margin-top: 5px;
+    border: none;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: bold;
+    color: #000;
+}
+
+#dt-name {
+    font-style: normal;
+    color: #000;
+}
+
+.field-container {
+    background-color: #559455;
+    width: 600px;
+    height: 900px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.field {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.line {
+    background-color: #fff;
+    position: absolute;
+}
+
+.goal-line {
+    width: 90%;
+    height: 5px;
+    left: 5%;
+}
+
+.goal-line.top-goal { top: 0; }
+.goal-line.bottom-goal { bottom: 0; }
+
+.penalty-area {
+    width: 60%;
+    height: 20%;
+    border: 5px solid #fff;
+    border-top: none;
+    border-bottom: none;
+    left: 20%;
+}
+
+.penalty-area.top-penalty { top: 0; }
+.penalty-area.bottom-penalty { bottom: 0; }
+
+.middle-line {
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-circle {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#player-positions {
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.player-spot {
+    position: absolute;
+    text-align: center;
+}
+
+.player-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #007BFF;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
